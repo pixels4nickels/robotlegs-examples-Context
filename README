@@ -1,1 +1,9 @@
-This file was created by IntelliJ IDEA (Leda) IU-123.100 for binding GitHub repository
+Simple example of using Robotlegs 2 Context and Mediator functionality.
+
+This example will create 2 views.
+
+View One has a few buttons that will be mediated through mapping an interface that is implemented on BasicButton. 
+The ButtonMediator will act as a controller by disptaching a custom event when it hears a mouse click on either button.
+
+View Two is also mediated through mapping an interface to MessageMediator. 
+Any view implementing this interface will get it's message set on it from the MessageMediator.
