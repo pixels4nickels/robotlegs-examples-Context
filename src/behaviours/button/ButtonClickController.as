@@ -1,10 +1,12 @@
 package behaviours.button
 {
 	import events.DisplayMessageEvent;
+
 	import flash.events.MouseEvent;
+
 	import robotlegs.bender.bundles.mvcs.Mediator;
 
-	public class ButtonMediator extends Mediator
+	public class ButtonClickController extends Mediator
 	{
 		[Inject]
 		public var view:IButtonClickable;
@@ -16,7 +18,7 @@ package behaviours.button
 
 		private function handleMouseClick(event:MouseEvent):void
 		{
-			dispatch(new DisplayMessageEvent(DisplayMessageEvent.MESSAGE_DISPATCHED, "Button Clicked:"+view.name));
+			dispatch(new DisplayMessageEvent(DisplayMessageEvent.MESSAGE_DISPATCHED, "Button Clicked: " + view.name));
 		}
 	}
 }

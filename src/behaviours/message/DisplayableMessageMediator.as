@@ -4,7 +4,7 @@ import events.DisplayMessageEvent;
 
 import robotlegs.bender.bundles.mvcs.Mediator;
 
-	public class MessageMediator extends Mediator
+	public class DisplayableMessageMediator extends Mediator
 	{
 		[Inject]
 		public var view:IMessageDisplayable;

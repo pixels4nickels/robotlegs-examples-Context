@@ -1,9 +1,9 @@
 package config
 {
-	import behaviours.button.ButtonMediator;
+	import behaviours.button.ButtonClickController;
 	import behaviours.button.IButtonClickable;
 	import behaviours.message.IMessageDisplayable;
-	import behaviours.message.MessageMediator;
+	import behaviours.message.DisplayableMessageMediator;
 	import org.swiftsuspenders.Injector;
 
 	import robotlegs.bender.extensions.mediatorMap.api.IMediatorMap;
@@ -20,8 +20,8 @@ package config
 		[PostConstruct]
 		public function configure():void
 		{
-			mediatorMap.map( IButtonClickable ).toMediator( ButtonMediator );
-			mediatorMap.map( IMessageDisplayable ).toMediator( MessageMediator );
+			mediatorMap.map( IButtonClickable ).toMediator( ButtonClickController );
+			mediatorMap.map( IMessageDisplayable ).toMediator( DisplayableMessageMediator );
 		}
 	}
 }
