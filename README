@@ -7,3 +7,5 @@ The ButtonMediator will act as a controller by disptaching a custom event when i
 
 View Two is also mediated through mapping an interface to MessageMediator. 
 Any view implementing this interface will get it's message set on it from the MessageMediator.
+
+This example merely shows how you can dispatch custom events and liasten for them in different views.
